@@ -1,0 +1,12 @@
+spring:
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: create
+    datasource:
+        driverClassName: org.postgresql.Driver
+        url: jdbc:postgresql://localhost/multitenant
+        username: bookboogie
+        password: roqkf12#
+server:
+    port: 9000
