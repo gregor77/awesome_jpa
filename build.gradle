@@ -8,7 +8,7 @@ buildscript {
 }
 
 apply plugin: 'java'
-apply plugin: 'eclipse'
+//apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'spring-boot'
 
@@ -66,8 +66,8 @@ task generateQueryDSL(type: JavaCompile, group: 'build', description: 'Generates
 compileJava {
     dependsOn generateQueryDSL
     // compile target에 generated된 QClass들의 위치를 추가.
-    generateQueryDSL.destinationDir
-//    source sourceSets.generated.java.srcDirs.iterator().next()
+//    generateQueryDSL.destinationDir
+    source sourceSets.generated.java.srcDirs.iterator().next()
 }
 
 compileGeneratedJava {

@@ -20,7 +20,7 @@ public class QTenant extends EntityPathBase<Tenant> {
 
     public static final QTenant tenant = new QTenant("tenant");
 
-    public final StringPath superTenantId = createString("superTenantId");
+    public final NumberPath<Long> superTenantId = createNumber("superTenantId", Long.class);
 
     public final StringPath superTenantYn = createString("superTenantYn");
 

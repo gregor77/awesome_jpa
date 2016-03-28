@@ -21,7 +21,7 @@ public class Tenant {
 
     private String tenantName;
 
-    private String superTenantId;
+    private Long superTenantId;
 
     private String superTenantYn;
 
